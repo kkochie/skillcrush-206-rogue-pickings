@@ -163,24 +163,23 @@ footer span {
 @media all and (min-width: 768px) {
 	.bottom-section {
 		flex-flow: row wrap;
-
+		justify-content: space-between;
+		align-items: flex-start;
+		border-top: 1px solid #eee;
 	}
 
 	.section-one,
 	.section-two,
 	.section-three {
+		border-top: none;
 		flex-basis: 30%;
 	}
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
-		justify-content: center;
 		padding: 0 2%;
 	}
 
-	.section-three {
-		padding-left: 2%;
-	}
 }
 
 
@@ -188,23 +187,23 @@ footer span {
 @media all and (min-width: 1200px) {
 	header {
 		flex-flow: row;
-		justify-content: flex-start;
+		justify-content: space-between;
 
 	}
 
 	header nav ul {
 		display: flex;
-		flex-flow: row;
+		justify-content: space-between;
 	}
 
 	header h1 {
-		width: 100%;
+		width: 30%;
 		padding: 0;
-		border-bottom: 0;
+		border-bottom: none;
 		text-align: left;
 	}
 
-	nav {
+	header nav {
 		width: 40%;
 	}
 }
